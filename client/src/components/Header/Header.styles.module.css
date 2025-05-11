@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(54, 61, 71);
+  position: relative;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin-left: 150px;
+}
+
+.taglines {
+  font-size: 2.5rem;
+  color: white;
+  cursor: var(--sword-cursor);
+  user-select: none;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 2);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 50px;
+  height: 100%;
+  gap: 30px;
+}
+
+nav a {
+  position: relative;
+  color: white;
+  font-size: 2.3rem;
+  text-decoration: none;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+}
+
+nav a:hover {
+  color: var(--hover-color);
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -53px;
+  width: 0%; /* Start with no underline */
+  height: 3px; /* Thickness of the underline */
+  background-color: var(--hover-color);
+  transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
