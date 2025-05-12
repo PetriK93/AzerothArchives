@@ -1,6 +1,10 @@
 :root {
   --hover-color: rgb(255, 217, 0);
+  --input-color: rgb(89, 104, 134);
+  --header-color: rgb(54, 61, 71);
   --sword-cursor: url("assets/sword.cur"), auto;
+  --placeholder-color: rgba(255, 255, 255, 0.6);
+  --focus-color: rgb(173, 161, 26);
 }
 
 * {

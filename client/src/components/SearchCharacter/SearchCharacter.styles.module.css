@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+}
+
+.title {
+  font-size: 2.3rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.searchRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+}
+
+.searchBar {
+  width: 500px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 1.5rem;
+  padding: 0 10px;
+  background-color: var(--input-color);
+  color: white;
+}
+
+.searchBar:focus {
+  border: 2px solid var(--focus-color);
+}
+
+.searchBar::placeholder {
+  color: var(--placeholder-color);
+}
+
+.serverDropdown {
+  width: 250px;
+  height: 40px;
+  background-color: var(--header-color);
+  outline: none;
+  border: none;
+  color: gold;
+  padding: 0 5px;
+  font-size: 1.2rem;
+}
+
+select option {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.searchButton {
+  width: 60px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffd900;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.magnifyingGlass {
+  width: 28px;
+  height: auto;
+  background: transparent;
+}

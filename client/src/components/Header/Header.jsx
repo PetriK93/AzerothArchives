@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./Header.styles.module.css";
 import logo from "../../assets/Azeroth Archives logo 1.png";
 
+// Collection of different taglines that the header will randomly choose on pageload
 const taglines = [
   "Preserving the Legends of Azeroth.",
   "The Scrolls of Warcraft, Unbound.",
@@ -35,11 +36,13 @@ const taglines = [
   "The Archives Never Forget.",
 ];
 
+// Sets the tagline by randomly choosing one of the stored taglines
 const Header = () => {
   const [tagline, setTagline] = useState(
     taglines[Math.floor(Math.random() * taglines.length)]
   );
 
+  // Changes the tagline, when you click the tagline text
   const changeTagline = () => {
     setTagline(taglines[Math.floor(Math.random() * taglines.length)]);
   };
@@ -55,8 +58,12 @@ const Header = () => {
         {tagline}
       </h1>
       <nav>
-        <a href="#">Equipment</a>
-        <a href="#">Talents</a>
+        <a href="#" aria-label="Navigate to equipment">
+          Equipment
+        </a>
+        <a href="#" aria-label="Navigate to talents">
+          Talents
+        </a>
       </nav>
     </div>
   );
