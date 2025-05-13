@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./Header.styles.module.css";
 import logo from "../../assets/Azeroth Archives logo 1.png";
+import RegionMenu from "../RegionMenu/RegionMenu.jsx";
 
 // Collection of different taglines that the header will randomly choose on pageload
 const taglines = [
@@ -19,7 +20,6 @@ const taglines = [
   "One World, Countless Tales.",
   "The Memory of a World at War.",
   "History Written in Fire and Magic.",
-  "From the Dark Portal to the Shadowlands.",
   "A Place for Every Hero’s Tale.",
   "The Record Keepers of Azeroth.",
   "Azeroth’s Chronicles, Gathered Here.",
@@ -29,15 +29,15 @@ const taglines = [
   "By the Light, the Void, and Everything Between.",
   "Azeroth’s Story Is Not Yet Finished.",
   "The Wisdom of Old, the Knowledge of New.",
-  "From Teldrassil to Icecrown, All is Remembered.",
+  "From Teldrassil to Dun Morogh, All is Remembered.",
   "History is Written by Heroes—and Kept by Us.",
   "The Keeper’s Watchful Eye Over Azeroth.",
   "Tales of Honor, Betrayal, and Glory.",
   "The Archives Never Forget.",
 ];
 
-// Sets the tagline by randomly choosing one of the stored taglines
-const Header = () => {
+const Header = ({ region, setRegion }) => {
+  // Sets the tagline by randomly choosing one of the stored taglines
   const [tagline, setTagline] = useState(
     taglines[Math.floor(Math.random() * taglines.length)]
   );
@@ -58,12 +58,15 @@ const Header = () => {
         {tagline}
       </h1>
       <nav>
-        <a href="#" aria-label="Navigate to equipment">
-          Equipment
-        </a>
-        <a href="#" aria-label="Navigate to talents">
-          Talents
-        </a>
+        <ul className={styles.navElements}>
+          <a href="#" aria-label="Navigate to equipment">
+            Equipment
+          </a>
+          <a href="#" aria-label="Navigate to talents">
+            Talents
+          </a>
+        </ul>
+        <RegionMenu region={region} setRegion={setRegion} />
       </nav>
     </div>
   );

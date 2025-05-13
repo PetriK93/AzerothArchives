@@ -28,9 +28,19 @@ nav {
   justify-content: center;
   align-items: center;
   position: absolute;
+  right: 90px;
+  height: 100%;
+  gap: 30px;
+}
+
+.navElements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   right: 50px;
   height: 100%;
   gap: 30px;
+  user-select: none;
 }
 
 nav a {
