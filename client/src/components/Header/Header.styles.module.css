@@ -4,10 +4,13 @@
   align-items: center;
   gap: 20px;
   width: 100%;
-  height: 150px;
-  background-color: var(--header-color);
+  height: 100px;
+  background-color: rgba(54, 61, 71, 0.7);
+  border-radius: 20px;
   position: relative;
   padding: 0 90px;
+  margin: 16px auto 0 auto;
+  max-width: 1850px;
 }
 
 .leftGroup {
@@ -23,12 +26,12 @@
 }
 
 .logo {
-  width: 150px;
+  width: 100px;
   height: auto;
 }
 
 .taglines {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: white;
   cursor: var(--sword-cursor);
   user-select: none;
@@ -53,7 +56,7 @@ nav {
 .navElements a {
   position: relative;
   color: white;
-  font-size: 2.3rem;
+  font-size: 2rem;
   text-decoration: none;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
 }
@@ -66,7 +69,7 @@ nav {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -53px;
+  bottom: -30px;
   width: 0%;
   height: 3px;
   background-color: var(--hover-color);
