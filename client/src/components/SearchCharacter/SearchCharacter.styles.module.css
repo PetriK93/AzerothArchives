@@ -29,6 +29,10 @@
   text-align: center;
 }
 
+.goldText {
+  color: gold;
+}
+
 .searchRow {
   display: flex;
   flex-direction: row;

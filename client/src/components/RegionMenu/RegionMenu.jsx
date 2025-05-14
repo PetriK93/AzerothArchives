@@ -86,7 +86,7 @@ function RegionMenu({ setRegion }) {
                 alt={`${r.name} flag`}
                 className={styles.icon}
               />
-              {r.name}
+              <p className={styles.regionName}>{r.name}</p>
             </div>
           ))}
         </div>

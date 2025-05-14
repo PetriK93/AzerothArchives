@@ -49,25 +49,30 @@ const Header = ({ region, setRegion }) => {
 
   return (
     <div className={styles.container}>
-      <img src={logo} className={styles.logo} alt="Azeroth Archives Logo" />
-      <h1
-        className={styles.taglines}
-        aria-label="Azeroth Archives"
-        onClick={changeTagline}
-      >
-        {tagline}
-      </h1>
-      <nav>
-        <ul className={styles.navElements}>
-          <a href="#" aria-label="Navigate to equipment">
-            Equipment
-          </a>
-          <a href="#" aria-label="Navigate to talents">
-            Talents
-          </a>
-        </ul>
-        <RegionMenu region={region} setRegion={setRegion} />
-      </nav>
+      <div className={styles.leftGroup}>
+        <img src={logo} className={styles.logo} alt="Azeroth Archives Logo" />
+        <h1
+          className={styles.taglines}
+          aria-label="Azeroth Archives"
+          onClick={changeTagline}
+        >
+          {tagline}
+        </h1>
+      </div>
+      <div className={styles.rightGroup}>
+        <nav>
+          <ul className={styles.navElements}>
+            <li>
+              <a href="#">Equipment</a>
+            </li>
+            <li>
+              <a href="#">Talents</a>
+            </li>
+          </ul>
+
+          <RegionMenu region={region} setRegion={setRegion} />
+        </nav>
+      </div>
     </div>
   );
 };

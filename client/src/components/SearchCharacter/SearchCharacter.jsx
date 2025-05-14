@@ -189,7 +189,9 @@ const SearchCharacter = ({ region, setRegion }) => {
         <h1 className={styles.title}>Azeroth Archives</h1>
         <p className={styles.description}>
           Type in the name of the character you wish to inspect.<br></br>
-          (World of Warcraft: Classic Era Servers Only)
+          <span className={styles.goldText}>
+            (World of Warcraft: Classic Era Servers Only)
+          </span>
         </p>
       </div>
       <div className={styles.searchRow}>

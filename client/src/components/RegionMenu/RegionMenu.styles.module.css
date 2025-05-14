@@ -1,5 +1,5 @@
 .dropdownContainer {
-  margin-top: 2px;
+  margin-top: 4px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -15,7 +15,7 @@
   background: transparent;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 0 0 0 0;
   font-size: 2.3rem;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
 }
@@ -29,14 +29,13 @@
   top: 100%;
   left: 0;
   background-color: var(--input-color);
-  border-radius: 5px;
+  border-radius: 0 5px 5px 5px;
   width: 160px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   outline: none;
   border: none;
   font-size: 1.2rem;
-  color: black;
   user-select: none;
 }
 
@@ -49,7 +48,27 @@
 
 .option:hover {
   background-color: gold;
-  border-radius: 5px;
+}
+
+.dropdownMenu > :first-child:hover {
+  border-radius: 0 5px 0 0;
+}
+
+.dropdownMenu > :nth-child(2):hover {
+  border-radius: 0 0 0 0;
+}
+
+.dropdownMenu > :nth-child(3):hover {
+  border-radius: 0 0 0 0;
+}
+
+.dropdownMenu > :last-child:hover {
+  border-radius: 0 0 5px 5px;
+}
+
+.regionName {
+  margin-left: 10px;
+  color: black;
 }
 
 .icon {
