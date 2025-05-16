@@ -2,6 +2,8 @@ import { useState } from "react";
 import styles from "./Header.styles.module.css";
 import logo from "../../assets/Azeroth Archives logo 1.png";
 import RegionMenu from "../RegionMenu/RegionMenu.jsx";
+import DropdownMenu from "../DropdownMenu/DropdownMenu";
+import home from "../../assets/home8.png";
 
 // Collection of different taglines that the header will randomly choose on pageload
 const taglines = [
@@ -63,13 +65,17 @@ const Header = ({ region, setRegion }) => {
         <nav>
           <ul className={styles.navElements}>
             <li>
-              <a href="#">Equipment</a>
-            </li>
-            <li>
-              <a href="#">Talents</a>
+              <a href="/">
+                <img
+                  src={home}
+                  alt="home icon"
+                  className={styles.navIcon}
+                ></img>
+                Home
+              </a>
             </li>
           </ul>
-
+          <DropdownMenu />
           <RegionMenu region={region} setRegion={setRegion} />
         </nav>
       </div>

@@ -62,7 +62,12 @@ function RegionMenu({ setRegion }) {
 
   return (
     <div className={styles.dropdownContainer} ref={dropdownRef}>
-      <button className={styles.dropdownButton} onClick={toggleDropdown}>
+      <button
+        className={styles.dropdownButton}
+        onClick={toggleDropdown}
+        aria-haspopup="menu"
+        aria-expanded={isOpen}
+      >
         {selectedRegion.icon ? (
           <img
             src={selectedRegion.icon}
@@ -74,7 +79,7 @@ function RegionMenu({ setRegion }) {
         )}
       </button>
       {isOpen && (
-        <div className={styles.dropdownMenu}>
+        <div className={styles.dropdownMenu} role="menu">
           {regions.map((r) => (
             <div
               key={r.name}

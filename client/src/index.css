@@ -5,6 +5,7 @@
   --sword-cursor: url("assets/sword.cur"), auto;
   --placeholder-color: rgba(255, 255, 255, 0.6);
   --focus-color: rgb(173, 161, 26);
+  --navIcon-color: #018cbb;
 }
 
 * {
