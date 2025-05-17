@@ -5,8 +5,8 @@
   gap: 20px;
   width: 100%;
   height: 100px;
-  background-color: rgba(54, 61, 71, 0.7);
-  border-radius: 20px;
+  background-color: rgba(54, 61, 71, 0.8);
+  border-radius: 50px;
   position: relative;
   padding: 0 90px;
   margin: 16px auto 0 auto;
@@ -86,4 +86,43 @@ nav {
   width: 30px;
   height: auto;
   margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+  .taglines {
+    font-size: 1.6rem;
+  }
+  .logo {
+    width: 90px;
+  }
+  .navElements a {
+    font-size: 1.4rem;
+  }
+  .navElements a:hover::after {
+    display: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  .taglines {
+    font-size: 1.2rem;
+  }
+  .logo {
+    width: 80px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .taglines {
+    font-size: 1rem;
+  }
+  .logo {
+    width: 70px;
+  }
+}
+
+@media (max-width: 945px) {
+  .taglines {
+    font-size: 0.9rem;
+  }
 }

@@ -98,3 +98,15 @@
   width: 30px;
   height: auto;
 }
+
+@media (max-width: 1200px) {
+  .dropdownButton {
+    font-size: 1.4rem;
+  }
+  .listIcon {
+    width: 25px;
+  }
+  .dropdownButton:hover::after {
+    display: none;
+  }
+}
