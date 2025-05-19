@@ -133,3 +133,15 @@
     width: 22px;
   }
 }
+
+@media (max-width: 870px) {
+  .dropdownButton {
+    display: none;
+  }
+  .dropdownMenu {
+    display: none;
+  }
+  .listIcon {
+    display: none;
+  }
+}

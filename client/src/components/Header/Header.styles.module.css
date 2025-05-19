@@ -130,10 +130,20 @@ nav {
 }
 
 @media (max-width: 870px) {
+  .container {
+    height: 70px;
+    border-radius: 0;
+    margin-top: 0;
+  }
   .taglines {
-    font-size: 1.2rem;
+    display: none;
+  }
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .navElements a {
-    font-size: 1.4rem;
+    display: none;
   }
 }

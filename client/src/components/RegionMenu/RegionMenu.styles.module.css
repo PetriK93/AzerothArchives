@@ -86,3 +86,26 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 870px) {
+  .dropdownContainer {
+    margin-top: 0;
+    margin-right: -90px;
+  }
+  .icon {
+    display: 43px;
+  }
+  .dropdownMenu {
+    width: 130px;
+    top: 110%;
+    left: -94%;
+    border-radius: 0 0 0 5px;
+  }
+  .dropdownMenu > :first-child:hover {
+    border-radius: 0 0 0 0;
+  }
+
+  .dropdownMenu > :last-child:hover {
+    border-radius: 0 0 0 5px;
+  }
+}

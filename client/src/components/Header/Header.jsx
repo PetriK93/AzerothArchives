@@ -3,6 +3,7 @@ import styles from "./Header.styles.module.css";
 import logo from "../../assets/Azeroth Archives logo 1.png";
 import RegionMenu from "../RegionMenu/RegionMenu.jsx";
 import DropdownMenu from "../DropdownMenu/DropdownMenu";
+import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 import home from "../../assets/home8.png";
 
 // Collection of different taglines that the header will randomly choose on pageload
@@ -60,6 +61,8 @@ const Header = ({ region, setRegion }) => {
         >
           {tagline}
         </h1>
+        {/* Mobile view when max-width: 870px */}
+        <HamburgerMenu />
       </div>
       <div className={styles.rightGroup}>
         <nav>
