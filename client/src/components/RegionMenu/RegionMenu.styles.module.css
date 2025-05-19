@@ -25,10 +25,11 @@
 
 .dropdownMenu {
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: var(--input-color);
-  border-radius: 0 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
   width: 155px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -36,6 +37,17 @@
   border: none;
   font-size: 1.2rem;
   user-select: none;
+}
+
+.dropdownMenu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent var(--input-color) transparent;
 }
 
 .option {
@@ -50,7 +62,7 @@
 }
 
 .dropdownMenu > :first-child:hover {
-  border-radius: 0 5px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .dropdownMenu > :last-child:hover {
@@ -74,6 +86,7 @@
     width: 46px;
   }
   .dropdownMenu {
+    top: 127%;
     font-size: 1.1rem;
   }
 }
@@ -83,6 +96,7 @@
     width: 43px;
   }
   .dropdownMenu {
+    top: 130%;
     font-size: 1rem;
   }
 }
@@ -98,7 +112,7 @@
   .dropdownMenu {
     width: 130px;
     top: 110%;
-    left: -94%;
+    left: 4%;
     border-radius: 0 0 0 5px;
   }
   .dropdownMenu > :first-child:hover {
@@ -107,5 +121,8 @@
 
   .dropdownMenu > :last-child:hover {
     border-radius: 0 0 0 5px;
+  }
+  .dropdownMenu::before {
+    display: none;
   }
 }

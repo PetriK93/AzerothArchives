@@ -53,7 +53,9 @@ const Header = ({ region, setRegion }) => {
   return (
     <div className={styles.container}>
       <div className={styles.leftGroup}>
-        <img src={logo} className={styles.logo} alt="Azeroth Archives Logo" />
+        <a className={styles.logoLink} href="/">
+          <img src={logo} className={styles.logo} alt="Azeroth Archives Logo" />
+        </a>
         <h1
           className={styles.taglines}
           aria-label="Azeroth Archives"
