@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header/Header.jsx";
 import SearchCharacter from "./components/SearchCharacter/SearchCharacter.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   const [region, setRegion] = useState("EU");
@@ -9,6 +10,7 @@ function App() {
     <>
       <Header region={region} setRegion={setRegion} />
       <SearchCharacter region={region} setRegion={setRegion} />
+      <Footer />
     </>
   );
 }

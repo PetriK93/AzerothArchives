@@ -62,7 +62,17 @@
   align-items: center;
 }
 
-.option:hover {
+.linkHover {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  padding: 5px 5px 5px 5px;
+}
+
+.linkHover:hover {
+  border-radius: 5px;
+  width: 100%;
   background-color: gold;
 }
 
@@ -70,14 +80,6 @@
   margin-left: 10px;
   color: black;
   text-decoration: none;
-}
-
-.dropdownMenu > :first-child:hover {
-  border-radius: 5px 5px 0 0;
-}
-
-.dropdownMenu > :last-child:hover {
-  border-radius: 0 0 5px 5px;
 }
 
 .icon {

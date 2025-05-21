@@ -14,7 +14,7 @@
   align-items: center;
   width: 100%;
   height: auto;
-  margin-top: -280px;
+  margin-top: -220px;
   z-index: 1;
 }
 
@@ -48,7 +48,7 @@
   width: 500px;
   height: 40px;
   outline: none;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 5px 0 0 5px;
   font-size: 1.5rem;
   padding: 0 10px;
@@ -58,7 +58,6 @@
 
 .searchBar:focus {
   border: 2px solid var(--focus-color);
-  padding: 0 8px;
 }
 
 .searchBar::placeholder {
@@ -70,10 +69,14 @@
   height: 40px;
   background-color: var(--header-color);
   outline: none;
-  border: none;
+  border: 2px solid transparent;
   color: gold;
   padding: 0 5px;
   font-size: 1.2rem;
+}
+
+.serverDropdown:focus {
+  border: 2px solid var(--focus-color);
 }
 
 select option {
@@ -107,3 +110,83 @@ select option {
 }
 
 /* Media Queries */
+
+@media (max-width: 870px) {
+  .title {
+    font-size: 2.1rem;
+    color: white;
+    margin-bottom: 15px;
+  }
+  .descriptionContainer {
+    margin-top: -90px;
+  }
+  .description {
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+  }
+  .searchBar {
+    width: 270px;
+    height: 35px;
+    font-size: 1.3rem;
+  }
+  .serverDropdown {
+    width: 200px;
+    height: 35px;
+    font-size: 1.1rem;
+  }
+  .searchButton {
+    width: 100px;
+    height: 35px;
+  }
+  select option {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    gap: 5px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .descriptionContainer {
+    margin-top: 0px;
+  }
+  .description {
+    font-size: 1.2rem;
+  }
+  .searchRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    gap: 10px;
+  }
+  .searchBar {
+    width: 270px;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 1.1rem;
+  }
+  .serverDropdown {
+    width: 270px;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 1.1rem;
+  }
+  select option {
+    font-size: 1.1rem;
+  }
+  .searchButton {
+    width: 135px;
+    height: 36px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 0px;
+  }
+  .magnifyingGlass {
+    width: 24px;
+  }
+}

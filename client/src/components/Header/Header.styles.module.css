@@ -115,9 +115,6 @@ nav {
 }
 
 @media (max-width: 1030px) {
-  .container {
-    height: 90px;
-  }
   .taglines {
     font-size: 1.4rem;
   }

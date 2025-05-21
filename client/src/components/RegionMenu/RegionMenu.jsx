@@ -86,12 +86,14 @@ function RegionMenu({ setRegion }) {
               onClick={() => handleRegionSelect(r)}
               className={styles.option}
             >
-              <img
-                src={r.icon}
-                alt={`${r.name} flag`}
-                className={styles.icon}
-              />
-              <p className={styles.regionName}>{r.name}</p>
+              <span className={styles.linkHover}>
+                <img
+                  src={r.icon}
+                  alt={`${r.name} flag`}
+                  className={styles.icon}
+                />
+                <p className={styles.regionName}>{r.name}</p>
+              </span>
             </div>
           ))}
         </div>

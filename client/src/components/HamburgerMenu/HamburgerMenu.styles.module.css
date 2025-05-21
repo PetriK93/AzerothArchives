@@ -2,7 +2,7 @@
   flex-direction: column;
   position: relative;
   display: none;
-  margin-left: -90px;
+  margin-left: -110px;
 }
 
 .hamburgerButton {
@@ -27,7 +27,7 @@
 .dropdownMenu {
   position: absolute;
   top: 110%;
-  left: -30%;
+  left: 0%;
   background-color: var(--input-color);
   border-radius: 0 0 5px 0;
   width: 200px;

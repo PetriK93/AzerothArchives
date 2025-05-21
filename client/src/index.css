@@ -32,5 +32,13 @@ body::before {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5); /* darkens the background */
-  z-index: 0;
+  z-index: -1;
+}
+
+/* Media Queries */
+
+@media (max-width: 580px) {
+  body {
+    background-position: 70% center; /* Shifts the background-image to the left */
+  }
 }

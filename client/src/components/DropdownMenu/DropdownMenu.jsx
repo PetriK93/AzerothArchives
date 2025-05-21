@@ -48,59 +48,69 @@ const DropdownMenu = () => {
       {isOpen && (
         <div className={styles.dropdownMenu} role="menu">
           <div className={styles.option}>
-            <img src={serverReset} className={styles.listIcon}></img>
-            <a
-              href="https://wowreset.com"
-              className={styles.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Server Reset Timers
-            </a>
+            <span className={styles.linkHover}>
+              <img src={serverReset} className={styles.listIcon}></img>
+              <a
+                href="https://wowreset.com"
+                className={styles.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Server Reset Timers
+              </a>
+            </span>
           </div>
           <div className={styles.option}>
-            <img src={maintenance} className={styles.listIcon}></img>
-            <a
-              href="https://us.battle.net/support/en/article/358479"
-              className={styles.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Weekly Maintenance Schedule
-            </a>
+            <span className={styles.linkHover}>
+              <img src={maintenance} className={styles.listIcon}></img>
+              <a
+                href="https://us.battle.net/support/en/article/358479"
+                className={styles.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Weekly Maintenance Schedule
+              </a>
+            </span>
           </div>
           <div className={styles.option}>
-            <img src={professionGuide} className={styles.listIcon}></img>
-            <a
-              href="https://www.wow-professions.com/classic"
-              className={styles.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Profession Guides
-            </a>
+            <span className={styles.linkHover}>
+              <img src={professionGuide} className={styles.listIcon}></img>
+              <a
+                href="https://www.wow-professions.com/classic"
+                className={styles.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Profession Guides
+              </a>
+            </span>
           </div>
           <div className={styles.option}>
-            <img src={classGuide} className={styles.listIcon}></img>
-            <a
-              href="https://www.icy-veins.com/wow-classic/class-guides"
-              className={styles.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Class Guides
-            </a>
+            <span className={styles.linkHover}>
+              <img src={classGuide} className={styles.listIcon}></img>
+              <a
+                href="https://www.icy-veins.com/wow-classic/class-guides"
+                className={styles.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Class Guides
+              </a>
+            </span>
           </div>
           <div className={styles.option}>
-            <img src={blizzardSite} className={styles.listIcon}></img>
-            <a
-              href="https://worldofwarcraft.blizzard.com/en-us"
-              className={styles.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Blizzard's Official Website
-            </a>
+            <span className={styles.linkHover}>
+              <img src={blizzardSite} className={styles.listIcon}></img>
+              <a
+                href="https://worldofwarcraft.blizzard.com/en-us"
+                className={styles.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Blizzard's Official Website
+              </a>
+            </span>
           </div>
         </div>
       )}
