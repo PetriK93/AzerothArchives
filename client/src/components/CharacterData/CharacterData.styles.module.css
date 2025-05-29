@@ -1,9 +1,10 @@
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   min-height: 100vh;
   background-color: transparent;
+  gap: 50px;
 }
 
 .outerCharacterInfo {
@@ -12,7 +13,7 @@
   width: fit-content;
   height: 120px;
   margin-left: 80px;
-  margin-top: 100px;
+  margin-top: 50px;
   background-color: rgba(54, 61, 71, 0.8);
   border-radius: 25px;
   padding-right: 20px;
@@ -30,7 +31,7 @@
 .factionLogo {
   width: auto;
   height: 160px;
-  margin-top: -10px;
+  margin-top: -15px;
 }
 
 .infoRow {
@@ -40,26 +41,132 @@
   width: 100%;
   height: 40px;
   font-size: 2rem;
-  color: gold;
+  color: white;
 }
 
 .name {
+  color: gold;
 }
 
 .iLvl {
+  color: orange;
 }
 
 .guild {
+  color: rgb(3, 224, 3);
 }
 
 .level {
+  color: gold;
 }
 
 .race {
+  color: rgb(209, 31, 245);
 }
 
 .class {
+  color: rgb(28, 187, 68);
 }
 
 .server {
+  color: white;
+}
+
+.equipmentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  width: 90%;
+  max-width: 1700px;
+  min-height: 750px;
+}
+
+.leftArmorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 35px;
+}
+
+.rightArmorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  gap: 35px;
+}
+
+.middleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+}
+
+.characterModel {
+  width: 500px;
+  height: auto;
+}
+
+.weaponsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  max-height: 70px;
+  width: 45%;
+  max-width: 1700px;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.itemSlot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background-color: lightgrey;
+  border: 2px solid black;
+}
+
+@media (max-width: 1200px) {
+  .infoRow {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  .infoRow {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .outerCharacterInfo {
+    margin: 0;
+    margin-top: 50px;
+    align-self: center;
+  }
+  .infoRow {
+    font-size: 1.3rem;
+  }
+  .characterModel {
+    width: 460px;
+  }
+  .itemSlot {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 580px) {
+  .infoRow {
+    font-size: 1.2rem;
+  }
 }

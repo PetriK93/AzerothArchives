@@ -1,6 +1,7 @@
 import styles from "./CharacterData.styles.module.css";
 import factionLogo1 from "../../assets/allianceLogo.png";
 import factionLogo2 from "../../assets/hordeLogo.png";
+import placeholder from "../../assets/placeholderImg.png";
 
 const CharacterData = () => {
   const name = "Lenyra";
@@ -32,6 +33,40 @@ const CharacterData = () => {
             <p className={styles.server}>{server}</p>
           </div>
         </div>
+      </div>
+      <div className={styles.equipmentContainer}>
+        <div className={styles.leftArmorContainer}>
+          <div className={styles.itemSlot}></div>
+          <div className={styles.itemSlot}></div>
+          <div className={styles.itemSlot}></div>
+          <div className={styles.itemSlot}></div>
+          <div className={styles.itemSlot}></div>
+          <div className={styles.itemSlot}></div>
+          <div className={styles.itemSlot}></div>
+          <div className={styles.itemSlot}></div>
+        </div>
+        <div className={styles.middleContainer}>
+          <img
+            src={placeholder}
+            className={styles.characterModel}
+            alt="Character model"
+          ></img>
+        </div>
+        <div className={styles.rightArmorContainer}>
+          <div className={styles.itemSlot}></div>
+          <div className={styles.itemSlot}></div>
+          <div className={styles.itemSlot}></div>
+          <div className={styles.itemSlot}></div>
+          <div className={styles.itemSlot}></div>
+          <div className={styles.itemSlot}></div>
+          <div className={styles.itemSlot}></div>
+          <div className={styles.itemSlot}></div>
+        </div>
+      </div>
+      <div className={styles.weaponsContainer}>
+        <div className={styles.itemSlot}></div>
+        <div className={styles.itemSlot}></div>
+        <div className={styles.itemSlot}></div>
       </div>
     </div>
   );

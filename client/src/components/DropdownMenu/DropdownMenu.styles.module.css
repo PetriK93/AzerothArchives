@@ -57,7 +57,6 @@
 
 .option {
   padding: 10px;
-  cursor: pointer;
   display: flex;
   align-items: center;
 }
@@ -74,6 +73,7 @@
   border-radius: 5px;
   width: 100%;
   background-color: gold;
+  cursor: pointer;
 }
 
 .link {
