@@ -4,13 +4,13 @@ import factionLogo2 from "../../assets/hordeLogo.png";
 import placeholder from "../../assets/placeholderImg.png";
 
 const CharacterData = () => {
-  const name = "Lenyra";
+  const name = "Shadowhunter";
   const iLvl = 75;
-  const guild = "<Malice in Wonderland>";
+  const guild = "<Defenders of Azeroth>";
   const level = 60;
   const race = "Night Elf";
   const className = "Druid";
-  const server = "Gandling EU";
+  const server = "Hydraxian Waterlords -- RP";
 
   return (
     <div className={styles.container}>
@@ -34,6 +34,7 @@ const CharacterData = () => {
           </div>
         </div>
       </div>
+      <div className={styles.outerCharacterInfoMobile}></div>
       <div className={styles.equipmentContainer}>
         <div className={styles.leftArmorContainer}>
           <div className={styles.itemSlot}></div>
@@ -67,6 +68,67 @@ const CharacterData = () => {
         <div className={styles.itemSlot}></div>
         <div className={styles.itemSlot}></div>
         <div className={styles.itemSlot}></div>
+      </div>
+      <div className={styles.equipmentContainerMobile}>
+        <div className={styles.armorContainerMobile}>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+          <div className={styles.itemContainer}>
+            <div className={styles.itemSlotMobile}></div>
+          </div>
+        </div>
       </div>
     </div>
   );
