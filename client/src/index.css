@@ -37,7 +37,7 @@ body::before {
 
 /* Media Queries */
 
-@media (max-width: 610px) {
+@media (max-width: 615px) {
   body {
     background-position: 70% center; /* Shifts the background-image to the left */
   }
